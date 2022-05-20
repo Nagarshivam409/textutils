@@ -46,7 +46,7 @@ export default function Textform(props) {
     <button className="btn btn-primary my-2 mx-1" onClick={handleRemoveSpaces}>Remove Extra Spaces</button>
     <div className="container my-2" style={{color:props.mode==='dark'? 'white':'black'}}>
         <h1>Your Text Summary:</h1>
-        <p> Your Sentence has {text.split(" ").length} words and {text.length} Character</p>
+        <p> Your Sentence has {text.split(" ").filter((element) => {return element.length !==0} ).length} words and {text.length} Character</p>
         <p>Average Time Required to Read: {0.008*text.split(" ").length} Minutes.</p>
         <h2>Preview:</h2>
         <p> {text.length>0?text:"Write your Text above in TextBox to Preview it here..."}</p>
