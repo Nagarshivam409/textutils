@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Textform from './components/Textform';
 import React, { useState } from 'react';
 import Alert from './components/Alert'
+// import About from './components/About';
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -52,6 +53,7 @@ function App() {
           <div className="container my-3">
             <Textform heading ="Enter Your Text Below to Analyze" mode={mode} showAlert={showAlert} toggle={toggle} />
           </div>
+
           {/* </Route>
           <Route exact path="/about">
            */}
@@ -67,6 +69,7 @@ function App() {
         {/* </Switch>
     
         </Router> */}
+        
     </>
   );
 }
